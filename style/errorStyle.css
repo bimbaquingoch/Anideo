@@ -17,3 +17,10 @@ body {
   margin-top: 5px;
   margin-left: 10px;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
