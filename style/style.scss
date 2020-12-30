@@ -117,7 +117,7 @@ ul:hover {
 }
 
 .carousel {
-    width: 98%;
+    width: 100%;
     overflow: scroll;
     padding: 30px;
     position: relative;
@@ -216,12 +216,17 @@ ul:hover {
 
 
 /* LOGIN */
+@mixin claseFlex{
+    display: flex;
+    flex-direction: column;
+}
 
 .login {
-    display: flex;
+    @include claseFlex;
+    height: inherit;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
 }
@@ -234,6 +239,7 @@ ul:hover {
 }
 
 .login__container {
+    @include claseFlex;
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 40px;
@@ -241,14 +247,11 @@ ul:hover {
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
-    display: flex;
     justify-content: space-around;
-    flex-direction: column;
 }
 
 .login__container__form {
-    display: flex;
-    flex-direction: column;
+    @include claseFlex;
     margin: 5px;
 }
 
@@ -342,8 +345,9 @@ ul:hover {
 .footer {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 6rem;
     width: 100%;
+    margin-top: auto;
 }
 
 .footer a {
@@ -364,24 +368,24 @@ ul:hover {
 /* Register */
 
 .register {
-    display: flex;
+   @include claseFlex;
+   height: inherit;
+   flex: 1;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
 }
 
 .register__container {
+    @include claseFlex;
     border: 2px solid white;
     border-radius: 40px;
     color: white;
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
-    display: flex;
     justify-content: space-around;
-    flex-direction: column;
 }
 
 .register__container__form {
