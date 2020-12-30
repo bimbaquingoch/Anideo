@@ -242,7 +242,7 @@ ul:hover {
 .login__container__form {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 5px;
 }
 
 .login__container__form label {
