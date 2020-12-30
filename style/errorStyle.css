@@ -42,8 +42,8 @@ body {
 .mainError {
   height: 100%;
   width: 100%;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 250px;
+  margin-bottom: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ body {
 }
 
 .mainError h1 {
-  margin: 10px;
+  margin: 20px;
   font-size: 50px;
   color: white;
 }
