@@ -1,6 +1,11 @@
 body {
   margin: 0px;
-  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background-image: linear-gradient(
+    /* 147deg, #FFE53B 0%, #FF2525 74%*/
+      /* 100deg, #fa8bff 0%, #2bd2ff 50%,#2bff88 100%*/ 90deg,
+    #74ebd5 0%,
+    #9face6 100% /*100deg, #2bff88 0%, #74EBD5 100%*/
+  );
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -24,6 +29,7 @@ body {
 }
 
 /* que se despliegue cuando se acerca el mouse  */
+
 .header__menu ul {
   display: none;
   list-style: none;
@@ -159,7 +165,11 @@ ul:hover {
 }
 
 .carousel__item__details {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   font-size: 10px;
   opacity: 0;
   transition: 450ms opacity;
@@ -210,6 +220,7 @@ ul:hover {
 }
 
 /* LOGIN */
+
 .login {
   display: flex;
   align-items: center;
@@ -267,6 +278,7 @@ ul:hover {
 }
 
 /* >div => le estoy diciendo que todos los div los estilice*/
+
 .login__container__socialMedia > div {
   display: flex;
   align-items: center;
@@ -352,6 +364,7 @@ ul:hover {
 }
 
 /* Register */
+
 .register {
   display: flex;
   align-items: center;
@@ -380,6 +393,7 @@ ul:hover {
 }
 
 /* Responsive Design*/
+
 @media only screen and (max-width: 600px) {
   .register__container {
     background-color: transparent;
@@ -387,26 +401,25 @@ ul:hover {
     padding: 0px;
     width: 100%;
   }
-
   .login__container {
     background-color: transparent;
     border: none;
     padding: 0px;
     width: 100%;
   }
-
   .footer {
     align-items: flex-start;
     flex-direction: column;
   }
-
   .header {
     align-items: flex-start;
     padding: 0px;
     width: 100%;
   }
 }
+
 /* ERROR PAGE*/
+
 .body__error {
   margin: 0px;
   background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 50%);
@@ -448,6 +461,7 @@ ul:hover {
     transform: scale(1);
   }
 }
+
 .pulse {
   animation-name: pulse;
   animation-duration: 1000ms;
@@ -463,7 +477,8 @@ ul:hover {
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
-  20%, 60% {
+  20%,
+  60% {
     transform: rotate(80deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
@@ -482,8 +497,8 @@ ul:hover {
     transform: translateY(700px);
   }
 }
+
 .mainError__hinge {
   animation-name: hinge;
 }
 
-/*# sourceMappingURL=style.css.map */
