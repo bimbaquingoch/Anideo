@@ -42,7 +42,75 @@ body {
 .mainError {
   height: 100%;
   width: 100%;
+  margin-top: 300px;
+  margin-bottom: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
+}
+
+.mainError h1 {
+  margin: 10px;
+  font-size: 50px;
+  color: white;
+}
+
+.animated {
+  animation-duration: 4000ms;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1000ms;
+}
+
+.mainError__404 {
+  animation-name: pulse;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+  }
+}
+
+.mainError__hinge {
+  animation-name: hinge;
 }
